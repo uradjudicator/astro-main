@@ -1,0 +1,43 @@
+---
+import cardIcon1 from "../assets/Images/icon1.jpg";
+---
+
+<div class="card">
+  <img src={cardIcon1} alt="icon" class="icon" />
+  <h3 class="card-title">Business</h3>
+  <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+</div>
+
+<style lang="scss">
+  @import "../assets/styles/variables.scss";
+
+  .card {
+        
+    width: 296px;
+    height: 228px;
+    padding: 33px;
+    border: 1px solid rgba($gray-400, $alpha: 0.3);
+    &:hover {
+      transition: 0.5;
+      background-color: $primary;
+      cursor: pointer;
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+      padding: 8px;
+      background-color: $light;
+      border-radius: 15px;
+      
+      
+    }
+    h3{
+        margin: 16px 0 4px;
+    }
+    .text {
+        text-align: left;
+        width: 232px;
+      color: $gray-400;
+    }
+  }
+</style>

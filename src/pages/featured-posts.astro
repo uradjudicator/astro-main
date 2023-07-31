@@ -1,10 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/featured-post/hero.astro";
+import AllPosts from "../components/featured-post/all-posts.astro";
+import AllCategories from "../components/featured-post/all-categories.astro";
+import JoinTeam from "../components/join-team.astro";
+
 ---
 
 <Layout title="Featured posts">
-    <main>
-        <Hero/>
-    </main>
+  <main>
+    <Hero />
+    <AllPosts />
+    <AllCategories />
+    <JoinTeam />
+  </main>
 </Layout>
