@@ -1,0 +1,97 @@
+---
+import postImage from "../../assets/Images/featured-hero.png";
+---
+
+<section class="next-posts">
+  <div class="container">
+    <h2 class="title">What to read next</h2>
+
+    <div class="wrapper">
+      <!-- card -->
+      <div class="post-card">
+        <div class="img">
+          <img src={postImage} alt="image" />
+        </div>
+        <p class="info">By <span>John Doe</span>l Aug 23, 2021</p>
+        <h3 class="post-card-title">
+          A UX Case Study Creating a Studious Environment for Students:
+        </h3>
+        <p class="text">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident.
+        </p>
+      </div>
+      <!-- card -->
+      <div class="post-card">
+        <div class="img">
+          <img src={postImage} alt="image" />
+        </div>
+        <p class="info">By <span>John Doe</span>l Aug 23, 2021</p>
+        <h3 class="post-card-title">
+          A UX Case Study Creating a Studious Environment for Students:
+        </h3>
+        <p class="text">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident.
+        </p>
+      </div>
+      <!-- card -->
+      <div class="post-card">
+        <div class="img">
+          <img src={postImage} alt="image" />
+        </div>
+        <p class="info">By <span>John Doe</span>l Aug 23, 2021</p>
+        <h3 class="post-card-title">
+          A UX Case Study Creating a Studious Environment for Students:
+        </h3>
+        <p class="text">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../assets/styles/variables.scss";
+  .next-posts {
+    padding-bottom: 128px;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        padding-bottom: 64px;
+        border-bottom: 1px solid $gray-500;
+        .post-card{
+            width: 100%;
+            max-width: 405px;
+
+            .img{
+                width: 100%;
+                height: 318px;
+                margin-bottom: 32px;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .info{
+                font-size: $text-small;
+                span{
+                    color: $accent;
+                }
+            }
+            .post-card-title{
+                margin: 16px 0 16px;            
+            }
+            
+        }
+    }
+  }
+</style>

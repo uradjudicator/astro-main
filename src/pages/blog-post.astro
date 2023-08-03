@@ -1,10 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Blog-Post/header.astro"
+import Header from "../components/Blog-Post/post-section.astro"
+import NextPosts from "../components/Blog-Post/next-posts.astro";
+import JoinTeam from "../components/join-team.astro";
 ---
 
 <Layout title="Blog Post">
     <main>
-    <Header></Header>
+    <Header />
+    <NextPosts />
+    <JoinTeam />
     </main>
   </Layout>
