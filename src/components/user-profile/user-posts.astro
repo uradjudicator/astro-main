@@ -1,0 +1,26 @@
+---
+import PostCard from "../featured-post/post-card.astro";
+---
+<section class="user-posts">
+    <div class="container">
+        <h1 class="title">My Posts</h1>
+        <div class="wrapper">
+            <PostCard />
+            <PostCard />
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+     @import "../../assets/styles/variables.scss";
+
+     .user-posts{
+        padding: 128px 0;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            margin-top: 64px;
+        }
+     }
+</style>

@@ -9,7 +9,9 @@ import PostCardImg from "../../assets/Images/postcardimg.jpg"
     </div>
     <div class="content">
         <p class="top-title">Startup</p>
-        <h2 class="title">Design tips for designers that cover everything you need</h2>
+        <h2 class="title">
+            <a href="/blog-post">Design tips for designers that cover everything you need</a>
+        </h2>
         <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
     </div>
 </div>
@@ -21,7 +23,12 @@ import PostCardImg from "../../assets/Images/postcardimg.jpg"
         justify-content: space-between;
         align-items: center;
         gap: 32px;
-
+        .title{
+            &:hover a{
+                transition: 0.3s;
+                color: $accent;
+            }
+        }
         .image{
             width: 100%;
             max-width: 490px;

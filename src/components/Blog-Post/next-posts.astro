@@ -14,7 +14,7 @@ import postImage from "../../assets/Images/featured-hero.png";
         </div>
         <p class="info">By <span>John Doe</span>l Aug 23, 2021</p>
         <h3 class="post-card-title">
-          A UX Case Study Creating a Studious Environment for Students:
+          <a href="/blog-post" class="link">A UX Case Study Creating a Studious Environment for Students:</a>
         </h3>
         <p class="text">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -29,7 +29,7 @@ import postImage from "../../assets/Images/featured-hero.png";
         </div>
         <p class="info">By <span>John Doe</span>l Aug 23, 2021</p>
         <h3 class="post-card-title">
-          A UX Case Study Creating a Studious Environment for Students:
+          <a href="/blog-post" class="link">A UX Case Study Creating a Studious Environment for Students:</a>
         </h3>
         <p class="text">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -44,7 +44,7 @@ import postImage from "../../assets/Images/featured-hero.png";
         </div>
         <p class="info">By <span>John Doe</span>l Aug 23, 2021</p>
         <h3 class="post-card-title">
-          A UX Case Study Creating a Studious Environment for Students:
+          <a href="/blog-post" class="link">A UX Case Study Creating a Studious Environment for Students:</a>
         </h3>
         <p class="text">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -87,7 +87,13 @@ import postImage from "../../assets/Images/featured-hero.png";
                 }
             }
             .post-card-title{
-                margin: 16px 0 16px;            
+                margin: 16px 0 16px;
+                a{
+
+                  &:hover{
+                    color: $accent;
+                  }         
+                }   
             }
             
         }
