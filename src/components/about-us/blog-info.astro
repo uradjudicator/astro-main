@@ -1,0 +1,54 @@
+---
+import ImageHand from "../../assets/Images/hands.jpg";
+import Image3people from "../../assets/Images/three-person.jpg"
+---
+
+<section class="blog-info">
+    <div class="container">
+        <!-- block-item -->
+<div class="block-item-1">
+    <div class="content">
+        <h2 class="title">Our team of creatives</h2>
+        <h4 class="suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+    </div>
+    <div class="image">
+        <img src={ImageHand} alt="">
+    </div>
+</div>
+        <!-- block-item -->
+<div class="block-item-2">
+    <div class="image">
+        <img src={Image3people} alt="">
+    </div>
+    <div class="content">
+        <h2 class="title">Our team of creatives</h2>
+        <h4 class="suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+    </div>
+</div>
+    </div>
+</section>
+
+<style lang="scss">
+      @import "../../assets/styles/variables.scss";
+.blog-info{
+    padding-bottom: 128px;
+}
+
+    .block-item-1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 137px;
+        margin-bottom: 128px;
+    }
+    .block-item-2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 137px;
+    }
+
+      
+</style>

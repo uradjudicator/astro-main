@@ -1,0 +1,101 @@
+---
+---
+
+<section class="about">
+  <div class="container">
+    <div class="wrapper">
+      <!-- LEFT -->
+      <div class="about-us">
+        <div class="top-title">Our mission</div>
+        <h3 class="title">
+          Creating valuable content for creatives all around the world
+        </h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+          blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At
+          risus viverra adipiscing at in tellus.
+        </p>
+        <a href="" class="link">
+          <span>Read More</span>
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <!-- RIGHT -->
+      <div class="our-mission">
+        <div class="top-title">Our vision</div>
+        <h3 class="title">A platform that empowers individuals to improve</h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+          blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At
+          risus viverra adipiscing at in tellus.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- style -->
+
+<style lang="scss">
+  @import "../../assets/styles/variables.scss";
+  .about {
+    padding-bottom: 128px;
+
+    .wrapper {
+      background-color: $gray-200;
+      padding: 96px 80px;
+      display: flex;
+      gap: 82px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -23px;
+        width: 282px;
+        height: 23px;
+        background-color: $accent;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        right: 218px;
+        top: -23px;
+        width: 842px;
+        height: 23px;
+        background-color: $primary;
+      }
+      .top-title {
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+      .text {
+        color: $gray-400;
+      }
+      .about-us {
+        width: 50%;
+        .title {
+          line-height: 48px;
+          margin-bottom: 16px;
+        }
+        .link {
+          font-size: 18px;
+          color: $accent;
+          font-weight: 700;
+          margin-top: 16px;
+        }
+      }
+      .our-mission {
+        width: 50%;
+        .title {
+          line-height: 40px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+</style>
