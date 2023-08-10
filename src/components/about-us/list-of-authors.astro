@@ -1,0 +1,32 @@
+---
+import AuthorCard from "../author-card.astro";
+---
+
+<section class="list-of-authors">
+  <div class="container">
+    <h2 class="title">List of Authors</h2>
+    <div class="wrapper">
+        <AuthorCard />
+        <AuthorCard />
+        <AuthorCard />
+        <AuthorCard />
+        <AuthorCard />
+        <AuthorCard />
+        <AuthorCard />
+        <AuthorCard />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../assets/styles/variables.scss";
+  
+  .title{
+    text-align: center;
+  }
+  .wrapper{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+</style>

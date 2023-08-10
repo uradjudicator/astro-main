@@ -1,0 +1,56 @@
+---
+import HeroIcon2 from "../assets/Images/hero-2.png";
+---
+
+<!-- card -->
+<div class="card">
+  <div class="hero-image">
+    <img src={HeroIcon2} alt="" />
+  </div>
+  <h3 class="name">Floyd Miles</h3>
+  <p class="bio">Content Writer @Company</p>
+  <div class="sci">
+    <a href="" class="sci-link">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="" class="sci-link">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="" class="sci-link">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="" class="sci-link">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</div>
+
+<style lang="scss">
+  @import "../assets/styles/variables.scss";
+
+  .card {
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gray-200;
+    padding: 40px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background-color: $light;
+    }
+    .name {
+      margin-top: 20px;
+    }
+    .bio {
+      margin-bottom: 20px;
+      color: $gray-400;
+      font-size: $text-small;
+    }
+    .sci {
+      display: flex;
+      gap: 16px;
+    }
+  }
+</style>
